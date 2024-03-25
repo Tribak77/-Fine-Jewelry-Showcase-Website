@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Old+Standard+TT&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e3ff8bb9fb.js" crossorigin="anonymous"></script>
+  <title>Fine Jewelry</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light  my-2">
+    <div class="container">
+      <span id="logo" class="navbar-brand mx-3"> FJ </span>
+      <a class="navbar-brand col-4" href="#" id="logoName"> Fine Jewelry </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active btn mx-4" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn mx-4" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn mx-4" href="#gallert">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn mx-4" href="#aboutUS">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn mx-4" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main  class="container mt-5">
+    <div id="home" class="row align-items " style="height: fit-content;">
+      <div class="col-md-6 py-5 " style="height: fit-content;" id="homeDescription">
+        <p id="p1">Beautiful, masterful design never goes out of fashion.</p>
+        <div>
+          <button type="button" id="btnGallery" class="btn btn-primary" onclick="window.location.href='#gallert'">Gallery</button>
+        </div>
+      </div>
+      <div class="col-md-6 mt-5 mt-md-0 " style="height: 700px;">
+        <div id="cover"></div>
+        <img src="imgs/img1.png" id="img1" class="img-fluid">
+        <img src="imgs/pexels-w-w-2799862.png" id="img2">
+      </div>
+    </div>
+
+    <section id="services" >
+      <h2 class="titles">Our Services</h2>
+      <br>
+      <div class="row">
+        <div class="col-md-4 my-5">
+          <img src="imgs/img3.png" class="OurServices rounded mx-auto d-block img-fluid">
+          <div class="mx-3 mt-3">
+            <h3> Custom Jewelry </h3>
+            <p class="servicesTEXT"> Our team specializes in designing and crafting complex custom jewelry in gold or platinum. Our 3D
+              designers can work with even the most complex ideas and create a digital model for you to approve
+              before committing to production. </p>
+            <button type="button" class="btn srvs" onclick="myServices(1)"> Read more </button>
+          </div>
+        </div>
+        <div class="col-md-4 my-5">
+          <img src="imgs/img4.png" class="OurServices rounded mx-auto d-block img-fluid">
+          <div class="mx-3 mt-3">
+            <h3> Engagement Ring </h3>
+            <p class="servicesTEXT">Our team of 3D modelers and jewelers can create literally any ring you can imagine, including
+              complex designs. We're opening up our services to private clients, so you can get a beautiful,
+              designer quality engagement ring at an affordable price. </p>
+            <button type="button" class="btn srvs" onclick="myServices(2)"> Read more </button>
+          </div>
+        </div>
+        <div class="col-md-4 my-5">
+          <img src="imgs/img5.png" class="OurServices rounded mx-auto d-block img-fluid">
+          <div class="mx-3 mt-3">
+            <h3> Jewelry Manufacturing </h3>
+            <p class="servicesTEXT"> We work with you to make sure your jewelry is produced exactly as you specify and with impeccable
+              standards. We can manufacture a unique collection for your store or even work with custom orders
+              for your customers. </p>
+            <button type="button" class="btn srvs" onclick="myServices(3)"> Read more </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section2" class="row my-5 align-items-center">
+      <div class="col-md-6 px-0">
+        <img src="imgs/Rectangle 9.png" class="w-100 img-fluid">
+      </div>
+      <div class="col-md-6 mt-3 mt-md-0 mb-3">
+        <h3 id="title"> No limits to the lifestyle you deserve.</h3>
+        <br>
+        <span id="description"> Contact us, and we'll reply to you with a personalized plan and quote.</span>
+        <br>
+        <button type="button" class="btn mt-3" id="sendBtn"> Send Your Design Idea </button>
+      </div>
+    </section>
+    <br>
+    <section id="gallert" class="gallery-section my-5">
+      <h2> Our Gallery </h2>
+      <div class="my-3 row">
+        <div class=" col-5 px-1">
+          <img src="imgs/Rectangle 10.png" id="gallery1">
+        </div>
+        <div class=" col-2 px-1">
+          <img src="imgs/Rectangle 39.png" id="gallery2" class="pb-0">
+          <img src="imgs/Rectangle 40.png" id="gallery3" class="pt-2">
+        </div>
+        <div class=" col-5 px-1" id="test">
+          <img src="imgs/Rectangle 42.png " id="gallery4">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <button type="button" class="btn mt-3" id="btnGallery">More</button>
+      </div>
+    </section>
+    <br>
+
+    <section id="aboutUS">
+      <h2>About us</h2>
+      <div class="row my-4">
+        <div class="col-12 col-md-6">
+          <img
+            src="imgs/young-blonde-woman-pearl-necklace-white-v-neck-top-smiles-widely-with-closed-eyes-takes-selfie-outside 1.png"
+            alt="" class="img-fluid w-100" id="imgAbout">
+        </div>
+        <div class="col-12 col-md-6 align-self-center">
+          <p class="text-lg">At Fine Jewelry, we work with high-end designers (both new and established), retail stores,
+            and also private clients looking for that perfect custom piece or engagement ring.</p>
+          <br>
+          <p class="text-md">Our studio combines over 20 years of experience with a modern focus on 3d printing
+            technology. While we specialize in custom design and digital modeling, we're also a respected high-end
+            jewelry manufacturer.</p>
+          <br>
+          <p class="text-sm">Our expert team of jewelers and designers will take your custom design idea all the way
+            from concept to reality.</p>
+          <br>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook-f mx-3"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="d-flex justify-content-center align-items-center my-3">
+          <button type="button" class="btn mt-3" id="aboutBtn">Contact us</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container ">
+    <div class="row d-flex justify-content-between ">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <h4>Fine Jewelry</h4>
+            <br>
+            <p class="footerTEXT">At fine jewelry, we work with high-end designers (both new and established), retail stores, and also private clients looking for that perfect custom piece or engagement ring.</p>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-3">
+            <h4>About us</h4>
+            <br>
+            <ul class="list-unstyled">
+                <li><a class="list" href="#">Services</a></li>
+                <li><a class="list" href="#">Gallery</a></li>
+                <li><a class="list" href="#">About us</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <h4>Support</h4>
+            <br>
+            <ul class="list-unstyled">
+                <li><i class="fa-regular fa-envelope"></i> <span class="footerTEXT">hello@finejewelry.com</span></li>
+                <li><i class="fa-solid fa-mobile-screen"></i> <span class="footerTEXT">+12-345-6789</span></li>
+            </ul>
+            <div class="social-icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook-f mx-3"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>
