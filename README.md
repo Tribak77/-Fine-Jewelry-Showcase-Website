@@ -18,4 +18,4 @@ Our website serves as a showcase for our hand-made jewelry collection, providing
 - HTML
 - CSS
 - Bootstrap
-- javaScript
+
